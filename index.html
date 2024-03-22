@@ -2,52 +2,71 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" type="text/css" href="index.css">
-        <link rel="stylesheet" href="short.css" media="screen and (max-width: 500px)">
-        <title>Here is the title</title>        
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" href="css/short.css" media="screen and (max-width: 600px)">
+        <script src="scripts/index.js"></script>
+        <title>Andrew's Blog!</title>        
     </head>
-<body >
-    <h1>This is the header</h1>
-    <p class="firstClass" id="p1">
-        This is an example paragraph, followed by an unordered list.
-    </p>
-    <ul class="firstClass" id="list1">
-        <li>First entry</li>
-        <li>Second entry</li>
-    </ul>
-    <p class="secondClass" id="p2">
-        This is a second example paragraph, followed by another unordered list.
-    </p>
-    <ul class="secondClass" id="list2">
-        <li>Second First entry</li>
-        <li>Second Second entry</li>
-    </ul>
-    <form>
-        <label for="fname">Name:</label><br>
-        <input type="text" id="name" name="fname"><br>
-        <label for="age">Age:</label><br>
-        <input type="number" id="age" name="age"><br>
-        <input type="submit" value="Submit">
-        <input type="reset">
-    </form>
-    <div class="flexparent">
-        <div class="flexchild">
-            <a href="home.html">Home</a>
+<body>
+    <h1>Andrew's Blog!</h1>
+    
+
+    <!-- MENU BAR -->
+    <div class="barparent">
+        <div class="barchild">
+            <a href="index.html">Home</a>
         </div>
-        <div class="flexchild">
-            <a href="estore.html">E-store</a>
+        <div class="barchild">
+            <a href="index.html">About</a>
         </div>
-        <div class="flexchild">
-            <a href="products.html">Products</a>
+        <div class="barchild">
+            <a href="index.html">Contact</a>
         </div>
-        <div class="flexchild">
-            <a href="health.html">Health</a>
+        <div class="barchild">
+            <a href="index.html">Archive</a>
         </div>
-        <div class="flexchild">
-            <a href="aboutus.html">About Us</a></div>
+        <div class="barchild" onclick="joke()">
+            <p >Joke?</p>
+        </div>
     </div>
-    <div>
-        <img class="images" src="cat.jpg" alt="Cat!" width="400" height="400">
+
+
+
+    <!-- MAIN CONTENT -->
+    <div class = "content">
+        <div class="sidebarframe">
+            <div class="sidebar">
+                <div class="sbimg"><img class="images" src="images/cat.jpg" alt="Cat!" width="250" height="250"></div>
+                <div class="sbp"><p>Here is some additional info. Go to the About page for additional additional info. Except,
+                     you can't do that, because that page doesn't exist.</p>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="pagenav">
+                <button id="previous">prev</button>
+                <p>Page 1/? </p>
+                <button id="next">next</button>
+            </div>
+            <div class="entries">
+                <h2>March 1st, 2024</h2>
+                <p>
+                    Today, I went on a long walk in the park. While I was at the park, I saw an old man eating an ice cream cone. 
+                    He had no teeth.
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Velit ut tortor pretium viverra suspendisse potenti nullam. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus
+                     scelerisque. Dui sapien eget mi proin sed. Est ultricies integer quis auctor elit sed vulputate. Maecenas ultricies mi eget mauris pharetra et ultrices.
+                      Eget duis at tellus at. Condimentum vitae sapien pellentesque habitant morbi tristique senectus. Amet consectetur adipiscing elit duis tristique sollicitudin nibh.
+                       Scelerisque in dictum non consectetur a erat nam at.
+
+                    Commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Justo nec ultrices dui sapien eget mi proin sed libero.
+                    Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Mi eget mauris pharetra et ultrices neque. Suspendisse in est ante in nibh.
+                     In massa tempor nec feugiat nisl. Dignissim enim sit amet venenatis urna. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Ut morbi tincidunt augue interdum. Arcu odio ut sem nulla. Arcu dui vivamus arcu felis bibendum ut tristique et. Faucibus nisl tincidunt eget nullam non nisi.
+                </p>
+            </div>
+        </div>
+        
     </div>
 </body>
 </html>
